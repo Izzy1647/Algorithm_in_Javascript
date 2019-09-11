@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="/Users/zzy/WebstormProjects/VuePractise/lib/vue.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>棋盘覆盖</title>
+    <style type="text/css">
+        #num{}
+        #board{
+            margin-top:20px;
+        }
+</style>
+</head>
+<body>
+    <div id="num">
+        <p>设置棋盘大小：
+            <input type="text" name="Num" size="4" v-model="size" />
+        </p>
+        <p>特殊方格的位置：</p>
+        <p>
+        x:<input type="text" name="X" size="25" v-model="x"/><br />
+        y:<input type="text" name="Y" size="25" v-model="y" />
+        </p>
+        <p>
+            <input type="button" value="生成棋盘" @click="SetBoard"/>
+
+            <input type="button" value="覆盖" @click="SetChess"/>
+        </p>
+    </div>
+    <div id="board">
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    let settings = new Vue({
+        el:'#num',
+        data:{
+            size:4,
+            x:1,
+            y:1,
+        },
+        methods:{
+            SetBoard(){
+                console.log("size",this.size)
+                var N=this.size  //棋盘大小
+
+                //棋盘放在board div中
+                var board=document.getElementById('board');
+                var table=document.createElement('table');
+                board.appendChild(table);
+
+
+                //设定table样式
+                table.style.border='2px solid';
+                table.style.borderCollapse='collapse';
+
+
+                //创建棋盘 表格
+                for(var i=0;i<N;i++)  //N=this.size
+                {
+                    var tr=document.createElement('tr');
+                    table.appendChild(tr);
+                    tr.style.height = "20px";
+                    tr.style.border='1px solid #ccc';
+                    for(var j=0;j<N;j++)
+                    {
+                        var td=document.createElement('td');
+                        tr.appendChild(td);
+                        td.style.width = "20px";
+                        td.style.border='1px solid #ccc';
+                    }
+                }
+
+
+                // var Out=document.getElementsByTagName('input')[4];
+
+
+            },
+
+            SetChess(){
+                //set matrix for chessboard
+                var  Matrix =  new Array();
+                for(var i=0;i<100; i++)
+                {
+                    Matrix[i] = new Array();
+                    for(var j=0;j<100;j++)
+                    {
+                        Matrix[i][j]=0;
+                    }
+                }
+
+                var r,c;
+                var X=this.x
+                var Y=this.y
+                var N=this.size
+
+                console.log(X,Y,N)
+
+                //p21 algorithm
+                var nCount = 0
+                function chessBoard(tr,tc,dr,dc,size)
+                {
+                    var s,t;
+                    if (size == 1) return;
+                    s =size/2;
+                    t = ++nCount ;
+                    if (dr < tr + s && dc < tc +s)
+                        chessBoard(tr,tc,dr,dc,s);
+                    else
+                    {
+                        Matrix[tr+s-1][tc+s-1] = t;
+                        chessBoard(tr,tc,tr+s-1,tc+s-1,s);
+                    }
+                    if (dr < tr + s && dc >= tc + s )
+                        chessBoard(tr,tc+s,dr,dc,s);
+                    else
+                    {
+                        Matrix[tr+s-1][tc+s] = t;
+                        chessBoard(tr,tc+s,tr+s-1,tc+s,s);
+                    }
+                    if (dr >= tr + s && dc < tc + s)
+                        chessBoard(tr+s,tc,dr,dc,s);
+                    else
+                    {
+                        Matrix[tr+s][tc+s-1] = t;
+                        chessBoard(tr+s,tc,tr+s,tc+s-1,s);
+                    }
+                    if (dr >= tr + s && dc >= tc + s)
+                        chessBoard(tr+s,tc+s,dr,dc,s);
+                    else
+                    {
+                        Matrix[tr+s][tc+s] = t;
+                        chessBoard(tr+s,tc+s,tr+s,tc+s,s);
+                    }
+                }
+                chessBoard(0,0,X-1,Y-1,N);
+
+                //console.log("MAtrix:",Matrix)
+
+
+                for (r = 0; r < N; r++)
+                {
+                    for (c = 0; c < N; c++)
+                    {
+                        var q=Matrix[r][c];
+                        //console.log(q)
+                        var table=document.getElementsByTagName('table')[0];
+                        table.rows[r].cells[c].style.background='rgb('+168*q%256+','+234*q%256+','+3241*q%256+')';
+                    }
+
+                }
+            }
+        }
+    })
+</script>
