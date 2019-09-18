@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="vue.min.js"></script>
+    <meta charset="UTF-8">
+    <title>最多约数问题</title>
+</head>
+<body>
+
+<div id="settings">
+    <p>输入小的数:</p>
+    a:<input type="text" name="a" v-model="a">
+    <p>输入大的数:</p>
+    b:<input type="text" name="b" v-model="b">
+    <p>
+        <input type="button" value="显示" @click="show">
+    </p>
+    <p>{{c}}</p>
+    <p>有最多约数的数是：</p>
+    <p>{{d}}</p>
+
+
+
+</div>
+
+
+<script>
+    let settings = new Vue({
+        el:'#settings',
+        data:{
+            a:0,
+            b:1,
+            c:0,
+            d:0,
+        },
+        methods:{
+
+            calculate(src){   // 计算余数个数
+                var sum = 0;
+                for(let i =1;i<Math.sqrt(src);i++){
+                    if(Number(src) %i == 0){
+                        sum += 2;
+                    }
+                }
+                if(Math.sqrt(src)%1==0){
+                    sum++;
+                }
+                return sum;
+            },
+            show(){
+                let a = Number(this.a);
+                let b = Number(this.b);
+                if(a==b){
+                    this.c = a;
+                }
+                else if (a>=b){
+                    alert("a>b!!")
+                }
+                else{
+                    let result = 0;
+                    let index = 0;
+
+                    for(let i=a;i<=b;i++){
+                        let calRes = this.calculate(i);
+                        // console.log("calRes:",calRes,"i:",i)
+                        if (calRes > result){
+                            result = calRes;
+                            index = i;
+                        }
+                    }
+                    this.c = result
+                    this.d = index
+                }
+
+
+            },
+
+        }
+
+
+    })
+
+</script>
+</body>
+</html>
