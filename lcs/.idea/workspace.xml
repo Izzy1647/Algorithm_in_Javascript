@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa7361af-d661-405e-ace9-f3ec46cde84f" name="Default Changelist" comment="" />
+    <list default="true" id="d412eecc-9afb-4b13-adf8-8e879e9f15bd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../8_queens/8_queens.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../djikstra/dijkstra.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hamming_code/hamming_code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../huffman_encode/huffman_encode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lcs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../matrix_multiply/matrix_multiply.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -15,18 +22,14 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Android_unlock.js">
+        <entry file="file://$PROJECT_DIR$/lcs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-214">
-              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+            <state relative-caret-position="240">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -40,11 +43,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/1.js" />
-        <option value="$PROJECT_DIR$/Android_unlock.js" />
+        <option value="$PROJECT_DIR$/lcs.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       </list>
     </option>
   </component>
@@ -53,13 +66,24 @@
     <option name="width" value="1440" />
     <option name="height" value="795" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="lcs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lcs" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -75,7 +99,6 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -89,28 +112,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.Android_unlock.js">
-    <configuration name="1.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="1.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
-    <configuration name="Android_unlock.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="Android_unlock.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
+  <component name="RunManager">
+    <configuration name="lcs.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="lcs.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.Android_unlock.js" />
-        <item itemvalue="Node.js.1.js" />
-        <item itemvalue="npm.test" />
+        <item itemvalue="Node.js.lcs.js" />
       </list>
     </recent_temporary>
   </component>
@@ -119,35 +127,31 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="aa7361af-d661-405e-ace9-f3ec46cde84f" name="Default Changelist" comment="" />
-      <created>1568987725952</created>
+      <changelist id="d412eecc-9afb-4b13-adf8-8e879e9f15bd" name="Default Changelist" comment="" />
+      <created>1571792743067</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1568987725952</updated>
-      <workItem from="1568987728237" duration="2381000" />
-      <workItem from="1569048940205" duration="2782000" />
-      <workItem from="1569131786185" duration="4730000" />
-      <workItem from="1569139354595" duration="11000" />
-      <workItem from="1569139417788" duration="1240000" />
-      <workItem from="1569224947669" duration="19000" />
-      <workItem from="1570588088416" duration="256000" />
+      <updated>1571792743067</updated>
+      <workItem from="1571792745657" duration="358000" />
+      <workItem from="1572097866864" duration="516000" />
+      <workItem from="1572344569773" duration="280000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11419000" />
+    <option name="totallyTimeSpent" value="1154000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="795" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="795" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25531915" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39914772" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32859176" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997155" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -164,35 +168,15 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/1.js" />
     <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lcs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Android_unlock.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-214">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

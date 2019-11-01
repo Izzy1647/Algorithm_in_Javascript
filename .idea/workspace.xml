@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8799a454-f428-43e1-afff-cda1f96835fd" name="Default Changelist" comment="Add most divisor problem">
+      <change afterPath="$PROJECT_DIR$/djikstra/dijkstra.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hamming_code/hamming_code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lcs/lcs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/matrix_multiply/matrix_multiply.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,19 +22,77 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chessBoard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1314">
-              <caret line="119" column="29" lean-forward="true" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
+            <state relative-caret-position="1785">
+              <caret line="119" column="29" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mostDivisor.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mostDivisor.html">
+        <entry file="file://$PROJECT_DIR$/demo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+            <state relative-caret-position="270">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hamming_code/hamming_code.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lcs/lcs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-370" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/matrix_multiply/matrix_multiply.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comb_math/Android_unlock.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-399" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/djikstra/dijkstra.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Android_unlock.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -39,8 +101,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>btoa</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,14 +118,20 @@
       <list>
         <option value="$PROJECT_DIR$/chessBoard.html" />
         <option value="$PROJECT_DIR$/mostDivisor.html" />
+        <option value="$PROJECT_DIR$/huffman_encode/huffman_encode.js" />
+        <option value="$PROJECT_DIR$/djikstra/dijkstra.js" />
+        <option value="$PROJECT_DIR$/demo.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="40" />
-    <option name="y" value="30" />
+    <option name="x" value="4" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="796" />
+    <option name="height" value="804" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -104,6 +178,24 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Node.js.demo.js">
+    <configuration name="demo.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="demo.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="dijkstra.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="dijkstra.js" working-dir="$PROJECT_DIR$/djikstra">
+      <method v="2" />
+    </configuration>
+    <configuration name="huffman_encode.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="huffman_encode.js" working-dir="$PROJECT_DIR$/huffman_encode">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.demo.js" />
+        <item itemvalue="Node.js.dijkstra.js" />
+        <item itemvalue="Node.js.huffman_encode.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -117,6 +209,10 @@
       <workItem from="1568201757370" duration="166000" />
       <workItem from="1568792970082" duration="1708000" />
       <workItem from="1568795380505" duration="4303000" />
+      <workItem from="1572345129375" duration="1172000" />
+      <workItem from="1572351315411" duration="25000" />
+      <workItem from="1572416445990" duration="1204000" />
+      <workItem from="1572427517795" duration="198000" />
     </task>
     <task id="LOCAL-00001" summary="Add most divisor problem">
       <created>1568799426177</created>
@@ -129,27 +225,27 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6177000" />
+    <option name="totallyTimeSpent" value="8776000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="32" width="1440" height="796" extended-state="6" />
+    <frame x="4" y="23" width="1440" height="804" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32954547" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.328125" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32954547" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -173,6 +269,56 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add most divisor problem" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/chessBoard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="119" column="29" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djikstra/dijkstra.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/horse_jump/horseJump.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huffman_encode/huffman_encode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comb_math/Android_unlock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-399" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hamming_code/hamming_code.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lcs/lcs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-370" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matrix_multiply/matrix_multiply.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Android_unlock.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mostDivisor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vue.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -182,17 +328,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chessBoard.html">
+    <entry file="file://$PROJECT_DIR$/demo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1314">
-          <caret line="119" column="29" lean-forward="true" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mostDivisor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
