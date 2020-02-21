@@ -33,7 +33,7 @@ function getModeNumber(arr,left,right) {  // 获取数组中众数
         }
     }
 
-    if()
+    
 
 
 
