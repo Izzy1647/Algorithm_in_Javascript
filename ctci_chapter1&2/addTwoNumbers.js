@@ -18,13 +18,12 @@ function ListNode(val) {
 
 var addTwoNumbers = function(l1, l2) {
     let res = new ListNode(null)
-    let headPointer = res
-    let cf = 0 // 进位
+    head = res  // return 用
     let sum = 0
-
-    while(l1 || l2 || cf){    
+    let cf = 0
+    while(cf || l1 || l2){
         sum = (l1?l1.val:0) + (l2?l2.val:0) + cf
-        cf = sum>9?1:0 
+        cf = sum>9?1:0
         res.next = new ListNode(sum%10)
         res = res.next
         l1 = l1?l1.next:null
@@ -32,13 +31,5 @@ var addTwoNumbers = function(l1, l2) {
 
     }
 
-    return headPointer.next
-
-
-
-
-
-
-
-
+    return head.next
 };
