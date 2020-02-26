@@ -22,8 +22,8 @@ var threeSum = function(nums) {
             continue
         }
 
-        let j = i+1,
-        k = nums.length-1
+        let j = i+1
+        let k = nums.length-1
 
         while(j<k){
             let sum = nums[i]+nums[j]+nums[k]
