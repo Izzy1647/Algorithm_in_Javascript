@@ -193,9 +193,19 @@ let cloneObj = function(obj){
             newobj[key] = typeof(val) === 'object' ? arguments.callee(val) : val 
         //     callee 是 arguments 对象的一个属性。它可以用于引用该函数的函数体内当前正在执行的函数。
         //     这在函数的名称是未知时很有用，例如在没有名称的函数表达式 (也称为“匿名函数”)内。
+
+
+            // newobj[key] = obj[key]
         }
     }
     return newobj
+}
+
+let myCloneObject = function(obj){
+    if(typeof(obj) !== 'object'){return obj}
+    if(obj.constructor === Date){}
+
+
 }
 
 
@@ -409,18 +419,6 @@ apple.sayhi()
 
 
 
-
-
-// 6. 回调地狱 promise   promise.all
-
-
-
-
-
-
-
-
-
 // 7. 闭包、作用域链、内存泄漏
 
 // 7.1 作用域链： 变量从里到外层层搜索
@@ -463,13 +461,13 @@ ff()  // 13
 
 // 10s 内每秒输出一个数字1-10  使用立即执行函数
 
-for(let i=0;i<5;i++){
-    (function(i){
-        setTimeout(function(){
-            console.log(i)
-        },1000*i)
-    })(i)
-}
+// for(let i=0;i<5;i++){
+//     (function(i){
+//         setTimeout(function(){
+//             console.log(i)
+//         },1000*i)
+//     })(i)
+// }
 
 
 // 8. ajax 原生包装 过程  websocket
@@ -497,10 +495,30 @@ constructorFn.call(obj)  // 将构造函数的this指向obj 新增了构造函�
 
 
 
+// 10 Array.map filter reduce
+
+let testArr = [1,2,3,4,5]
+let mapArr = testArr.map(x=>{
+    return x * x
+})
+
+console.log(mapArr)
 
 
 
 
+
+// 用递归编写一个函数，计算 n 个数字的和，n >= 0。不能循环。
+
+let add = function(n){
+    if(n<1){
+        return 0
+    }
+    return add(n-1)+n
+
+}
+
+console.log(add(5))
 
 
 
