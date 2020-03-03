@@ -12,12 +12,9 @@ var trap = function(height) {
     let sum = new Array(len)   // 存放每列水量
 
     // 动态规划
-    let leftHighest = new Array(len)   // 存放第i个墙左边最高的高度 不含i
-    let rightHighest = new Array(len)  // 存放第i个墙右边最高的高度 不含i
-
-    for(let i=0;i<len;i++){     // 全部初始化为0 一定要初始化 不然下面生成数组时全是NaN
-        leftHighest[i] = rightHighest[i] = 0
-    }
+    // 全部初始化为0 一定要初始化 不然下面生成数组时全是NaN
+    let leftHighest = new Array(len).fill(0)   // 存放第i个墙左边最高的高度 不含i  
+    let rightHighest = new Array(len).fill(0)  // 存放第i个墙右边最高的高度 不含i
 
     for(let i=1;i<len-1;i++){   // 得到leftHighest数组
         leftHighest[i] = Math.max(leftHighest[i-1],height[i-1])       
