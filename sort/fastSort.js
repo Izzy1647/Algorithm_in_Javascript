@@ -20,7 +20,6 @@ var quickSort = function(arr,i,j){
             [arr[left],arr[right]] = [arr[right],arr[left]];
           }
         }
-        
         quickSort(arr, i, left-1);
         quickSort(arr, left+1, j);
         return arr;

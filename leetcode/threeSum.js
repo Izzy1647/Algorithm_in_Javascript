@@ -11,20 +11,15 @@ let nums = [-1, 0, 1, 2, -1, -4]
 // 三个指针滑动 初始位置分别在 i, i+1, len-1
 var threeSum = function(nums) {
     let res = []
-
     nums.sort((a,b)=>{   // 从小到大排序
         return a-b
     })
-
     for(let i=0;i<nums.length;i++){
-
         if(i>0 && nums[i] === nums[i-1]){  // 重复跳过
             continue
         }
-
         let j = i+1
         let k = nums.length-1
-
         while(j<k){
             let sum = nums[i]+nums[j]+nums[k]
             if( sum === 0){   // 满足条件
@@ -41,8 +36,6 @@ var threeSum = function(nums) {
         }
     }
     return res
-
-
 };
 
 console.log(threeSum(nums))
